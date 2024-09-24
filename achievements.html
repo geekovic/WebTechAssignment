@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Sharma - Portfolio</title>
+    <link rel="shortcut icon" href="images/gscomp.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+            background-size: cover;
+        }
+        header {
+            background-color: #2e3d4d;
+            color: #d1d1d1;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #d1d1d1;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #445b6e;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #5b748a;
+            transform: scale(1.05);
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 100vh;
+            scroll-margin-top: 100px;
+        }
+        #Academics {
+            background-color: #B9D9EB;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        #Academics h2, #Sports h2 {
+            font-size: 2.5em;
+            color: #2e3d4d;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #Academics p{
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.8;
+        }
+        #Sports p{
+            font-size: 1.1em;
+            color: #FFFFFF;
+            line-height: 1.8;
+        }
+        #Academics ul, #Sports ul {
+            list-style: none;
+            padding: 0;
+        }
+        #Academics ul li, #Sports ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        #Academics ul li::before, #Sports ul li::before {
+            content: "• ";
+            color: #2e3d4d;
+            font-weight: bold;
+        }
+        #Sports {
+            background-color: #2e3d4d;
+            padding: 50px;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #Sports h2 {
+            font-size: 2.2em;
+            color: #FFFFFF;
+        }
+        #Sports h3 {
+            font-size: 1.2em;
+            color: #FFFFFF;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #d1d1d1;
+            text-align: center;
+            padding: 20px;
+            /* margin-top: 15px; */
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivek Sharma</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#Academics">Academics</a>
+            <a href="#Sports">Sports & Co-Curricular</a>
+            <a href="ssb.html" target="_blank">SSB Journey</a>
+        </nav>
+    </header>
+    
+    <section id="Academics">
+        <h2>Academics</h2>
+        <p>
+            I am currently pursuing my B.Tech in Computer Science at GCET Jammu. My academic journey is driven by a passion for technology, innovation and problem-solving.
+            <br><br>
+            <strong>Notable Accomplishments:</strong>
+            <ul>
+                <li>Scored 95% in Class 10th</li>
+                <li>Scored 89.5% in Class 12th</li>
+                <li>Secured a rank of 192083 in JEE Mains Examination</li>
+                <li>Cracked UPSC NDA Examination(II)-2023</li>
+            </ul>
+            <br>
+            <strong>Certifications:</strong>
+            <ul>
+                <li>Python Bootcamp - Udemy</li>
+                <li>Introduction to Cyber Security - Harvard CS50</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="Sports">
+        <h2>Sports & Co-Curricular</h2>
+        <p> 
+            Outside academics, I am passionate about sports and various other activities. My commitment to physical fitness and personalty development mirrors my drive for excellence in all areas of life.
+            <br><br>
+            <strong>Sports:</strong> 
+            <ul>
+                <li>Gold Medalist 65kg category at State Grappling Championship 2019</li>
+                <li>Represented my club at various District-level Football Tournaments</li>
+                <li>Represented GCET Jammu in the Inter-College Table-Tennis Tournament 2024</li>
+            </ul>
+            <br>
+            <strong>Co-Curricular:</strong>
+            <ul>
+                <li><a href="ssb.html" target="_blank" style="text-decoration: none; color: white;"> Recommended for Indian Navy(10+2 entry) from 33SSB Bhopal</a></li>
+                <li>2-Times AWES Northern Command Quiz Champion</li>
+                <li>Active member in the Startup Cell of GCET Jammu</li>
+            </ul>
+        </p>               
+    
+    </section>
+
+    <footer>
+        <p>© 2024 Vivek Sharma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
